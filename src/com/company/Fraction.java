@@ -1,4 +1,7 @@
 package com.company;
+
+import java.sql.SQLOutput;
+
 public class Fraction {
     private int numerator;		//attributes
     private int denominator;
@@ -76,10 +79,16 @@ public class Fraction {
 		System.out.println(f1 + " - " + f2 + " = " + f4);
 
 //		Add code to multiply f1 and f2 here
-//
+        Fraction f5 = f1.multiply(f2);
+        System.out.println(f1 + " * " + f2 + " = " + f5);
 //		Add code to call reciprocal here
-//
+        Fraction f6 = f1.reciprocal();
+        System.out.println(f6 + " is the reciprocal of " + f1);
 //		create 2 new fractions and add them here.
+        Fraction f7 = new Fraction(5,6);
+        Fraction f8 = new Fraction(3,11);
+        Fraction f9 = f7.add(f8);
+        System.out.println(f7 + " + " + f8 + " = " + f9);
 
 
 
@@ -87,3 +96,12 @@ public class Fraction {
     }
 
 }
+/*
+3/4
+3/4 + 4/5 = 31/20
+3/4 - 4/5 = -1/20
+3/4 * 4/5 = 12/20
+4/3 is the reciprocal of 3/4
+5/6 + 3/11 = 73/66
+
+*/
